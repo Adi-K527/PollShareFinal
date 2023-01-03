@@ -20,13 +20,3 @@ app.use("/api/user", require("./Routes/userRoutes"))
 
 //SERVER
 app.listen(port, () => console.log("Running on port " + port))
-
-
-
-
-  ///////////////////////////////////       TO-DO LIST      ////////////////////////////////////////
-//- Styling, incorporate TailwindCSS (2 days)
-//- deploy on a thing (1 day)
-
-
-//                            Projected finish date: January 4th, 2023
