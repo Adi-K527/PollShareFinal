@@ -13,7 +13,7 @@ const Login = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    const res = await fetch("http://localhost:5000/api/user/login", {
+    const res = await fetch("https://pollsharev2.onrender.com/api/user/login", {
       method: "POST",
       headers: {
 				'Content-Type': 'application/json',

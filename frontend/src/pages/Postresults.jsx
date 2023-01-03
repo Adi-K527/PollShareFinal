@@ -18,7 +18,7 @@ const Postresults = () => {
   
 
   const getPost = async () => {
-    const res = await fetch("http://localhost:5000/api/post/" + id, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/post/" + id, {
         method: "GET",
     })
     const data = await res.json()
@@ -26,7 +26,7 @@ const Postresults = () => {
   }
 
   const getUser = async() => {
-    const res = await fetch("http://localhost:5000/api/user/" + userid, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/user/" + userid, {
         method: "GET"
     })
     const user = await res.json()
@@ -48,7 +48,7 @@ const Postresults = () => {
 
   const sendComment = async () => {
 
-    const res = await fetch("http://localhost:5000/api/post/" + id, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/post/" + id, {
         method: "PUT",
         headers: {
             "content-type": "application/json"

@@ -11,7 +11,7 @@ const SinglePost = ({post, page}) => {
   
 
   const getUser = async () => {
-    const res = await fetch("http://localhost:5000/api/user/" + post.creator, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/user/" + post.creator, {
         method: "GET",
     })
     const data = await res.json()
@@ -25,7 +25,7 @@ const SinglePost = ({post, page}) => {
   }
 
   const getRealPost = async() => {
-    const res = await fetch("http://localhost:5000/api/post/" + post._id, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/post/" + post._id, {
       method: "GET"
     })
     const postData = await res.json()

@@ -15,7 +15,7 @@ function Signup() {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    const res = await fetch("http://localhost:5000/api/user/register", {
+    const res = await fetch("https://pollsharev2.onrender.com/api/user/register", {
       method: "POST",
       headers: {
 				'Content-Type': 'application/json',

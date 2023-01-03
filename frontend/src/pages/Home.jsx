@@ -12,7 +12,7 @@ const Home = () => {
     const [user, setUser] = useState({username: "", createdPosts: [], answeredPosts: []})
 
     const fetchData = async() => {
-        const res = await fetch("http://localhost:5000/api/post/user/" + userid, {
+        const res = await fetch("https://pollsharev2.onrender.com/api/post/user/" + userid, {
             method: "GET",
         })
         const postsData = await res.json()
@@ -20,7 +20,7 @@ const Home = () => {
     }
 
     const getUser = async () => {
-        const res = await fetch("http://localhost:5000/api/user/" + userid, {
+        const res = await fetch("https://pollsharev2.onrender.com/api/user/" + userid, {
             method: "GET",
         })
         const data = await res.json()

@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Routes, Route, useParams} from "react-router-dom"
-import StartingPage from "./pages/StartingPage"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Home from "./pages/Home"

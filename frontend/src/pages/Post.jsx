@@ -12,7 +12,7 @@ const Post = () => {
   const { id } = useParams();
   
   const getPost = async () => {
-    const res = await fetch("http://localhost:5000/api/post/answer/" + id, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/post/answer/" + id, {
       method: "GET", 
     })
     const data = await res.json()
@@ -32,7 +32,7 @@ const Post = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    const res = await fetch("http://localhost:5000/api/post/" + id, {
+    const res = await fetch("https://pollsharev2.onrender.com/api/post/" + id, {
       method: "PUT",
       headers: {
         "content-type": "application/json"

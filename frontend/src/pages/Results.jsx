@@ -11,7 +11,7 @@ const Results = () => {
     const [user, setUser] = useState({username: "", createdPosts: [], answeredPosts: []})
 
     const getUser = async() => {
-        const res = await fetch("http://localhost:5000/api/user/" + userid, {
+        const res = await fetch("https://pollsharev2.onrender.com/api/user/" + userid, {
             method: "GET",
         })
         const userData = await res.json()
@@ -19,7 +19,7 @@ const Results = () => {
     }
 
     const getCreatedPosts = async (id) => {
-        const res = await fetch("http://localhost:5000/api/post/" + id, {
+        const res = await fetch("https://pollsharev2.onrender.com/api/post/" + id, {
             method: "GET",
         })
         const postData = await res.json()
@@ -28,7 +28,7 @@ const Results = () => {
     }
 
     const getAnsweredPosts = async (id) => {
-        const res = await fetch("http://localhost:5000/api/post/" + id, {
+        const res = await fetch("https://pollsharev2.onrender.com/api/post/" + id, {
             method: "GET",
         })
         const postData = await res.json()
@@ -42,7 +42,7 @@ const Results = () => {
 
     const deletePost = async (id) => {
         console.log(id)
-        const res = await fetch("http://localhost:5000/api/post/" + id, {
+        const res = await fetch("https://pollsharev2.onrender.com/api/post/" + id, {
             method: "DELETE",
         })
         const data = await res.json() 
